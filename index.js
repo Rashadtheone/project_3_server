@@ -24,7 +24,6 @@ app.use(cors())
 app.use('/movies', movieController)
 
 // set listener for PORT
-app.listen(PORT, function() {
-    console.log('App started on port ' + PORT)
+app.listen(PORT, function () {
+  console.log('App started on port ' + PORT)
 })
-

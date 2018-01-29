@@ -9,12 +9,11 @@ mongoose.Promise = Promise
 // seed your local db with some data
 Movie
     .remove({})
-    .then(function() {
-        console.log('Planting seeds...')
-        return Movie.collection.insert(seedData)
+    .then(function () {
+      console.log('Planting seeds...')
+      return Movie.collection.insert(seedData)
     })
-    .then(function() {
-        console.log('Your db has been seeded!')
-        process.exit()
+    .then(function () {
+      console.log('Your db has been seeded!')
+      process.exit()
     })
-

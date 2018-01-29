@@ -2,7 +2,7 @@
 const mongoose = require('../models/schema')
 
 // using native ES6 Promises, in place of mongoose's deprecated mpromise library
-// `Promise` will provides us with a couple methods: .then() for success, 
+// `Promise` will provides us with a couple methods: .then() for success,
 // and .catch() for errors
 mongoose.Promise = Promise
 

@@ -4,13 +4,13 @@ const mongoose = require('mongoose')
 // as an argument to mongoose.Schema, and the object values are the data type of that field
 const SongSchema = new mongoose.Schema({
   title: String,
-  author: String,
+  author: String
 })
 
 const MovieSchema = new mongoose.Schema({
   title: String,
-  genre: [], 
-  description: String, 
+  genre: [],
+  description: String,
   soundtrack: String,
   createDate: {
     type: Date,
