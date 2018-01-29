@@ -1,8 +1,6 @@
-# Express API Boilerplate
+# Project 3 Server Repo
 
-An Express seed application configured to serve GET, POST, PUT and DELETE with Mongoose configuration for a connection to a local MongoDB.
-
-This should get you up and running in no time!
+This is the Project 3 Server Repo
 
 Prerequisites:
 
