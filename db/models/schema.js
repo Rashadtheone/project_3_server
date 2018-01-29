@@ -7,8 +7,20 @@ const SongSchema = new mongoose.Schema({
   author: String,
 })
 
+const MovieSchema = new mongoose.Schema({
+  title: String,
+  genre: [], 
+  description: String, 
+  soundtrack: String,
+  createDate: {
+    type: Date,
+    default: Date.now
+  },
+  playlist: [SongSchema]
+})
+
 // builds a model from the schema, and attaches it to our mongoose instance.
 // a model is used to query and change data in the database
-mongoose.model('Song', SongSchema)
+mongoose.model('Movie', MovieSchema)
 
 module.exports = mongoose

@@ -1,5 +1,5 @@
 // we're importing a mongoose instance which has our model configuration attached to it
-const mongoose = require('../models/movie')
+const mongoose = require('../models/schema')
 
 // using native ES6 Promises, in place of mongoose's deprecated mpromise library
 // `Promise` will provides us with a couple methods: .then() for success, 
