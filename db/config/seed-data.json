@@ -54,5 +54,34 @@
            "author": "Guns N' Roses"
           }
       ]
+    },
+
+{
+  "title": "2 Fast 2 Furious",
+      "genre": ["Action", "Crime", "Thriller"], 
+      "description": "Former cop Brian O'Conner is called upon to bust a dangerous criminal and he recruits the help of a former childhood friend and street racer who has a chance to redeem himself.", 
+      "soundtrack":"2 Fast 2 Furious", 
+      "playlist": [
+        {
+          "title": "Act A Fool", 
+          "author": "Ludacris"
+         }, 
+         {
+           "title": "Gettin' It", 
+           "author": "Chingy"
+         }, 
+         {
+           "title": "Pump it Up", 
+           "author": "Joe Budden"
+          },
+          {
+           "title": "Oye", 
+           "author": "Pitbull"
+          },
+          {
+           "title": "We Ridin", 
+           "author": "Fat Joe"
+          }
+      ]
     }
   ]
