@@ -8,7 +8,7 @@ const Movie = mongoose.model('Movie')
 
 // GET ROUTES //
 router.get('/', function(req, res) {
-    Movies
+    Movie
         .find({})
         .then(function(data) {
             res.json(data)
@@ -16,7 +16,7 @@ router.get('/', function(req, res) {
 })
 
 router.get('/:name', function(req, res) {
-    Movies
+    Movie
         .findOne({name: req.params.name})
         .then(function(data) {
             res.json(data)
@@ -25,7 +25,7 @@ router.get('/:name', function(req, res) {
 
 // POST ROUTES //
 router.post('/', function(req, res) {
-    Movies
+    Movie
         .create(req.body)
         .then(function(data) {
             res.json(data)
@@ -34,7 +34,7 @@ router.post('/', function(req, res) {
 
 // PUT ROUTES //
 router.put('/:name', function(req, res) {
-    Movies
+    Movie
         .findOneAndUpdate({ name: req.params.name} , req.body)
         .then(function(data) {
             res.json(data)
@@ -43,7 +43,7 @@ router.put('/:name', function(req, res) {
 
 // DELETE ROUTES //
 router.delete('/:name', function(req, res) {
-    Movies
+    Movie
         .findOneAndRemove({ name: req.params.name} , req.body)
         .then(function(data) {
             res.json(data)

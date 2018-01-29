@@ -1,17 +1,17 @@
 const mongoose = require('./db-connection')
 const seedData = require('./seed-data')
 
-const Player = mongoose.model('Player')
+const Movie = mongoose.model('Movie')
 
 mongoose.Promise = Promise
 
 // plant the seeds!
 // seed your local db with some data
-Player
+Movie
     .remove({})
     .then(function() {
         console.log('Planting seeds...')
-        return Player.collection.insert(seedData)
+        return Movie.collection.insert(seedData)
     })
     .then(function() {
         console.log('Your db has been seeded!')
