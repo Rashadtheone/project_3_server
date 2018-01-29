@@ -1,8 +1,31 @@
 [
     {
-      "name": "Lebron James",
-      "sport": "Basketball", 
-      "team": "Cleveland Cavaliers"
+      "title": "Star Wars: A New Hope",
+      "genre": "Action, Adventure, Fantasy", 
+      "description": "Nineteen years after the formation of the Empire, Luke Skywalker is thrust into the struggle of the Rebel Alliance when he meets Obi-Wan Kenobi, who has lived for years in seclusion on the desert planet of Tatooine. Obi-Wan begins Luke's Jedi training as Luke joins him on a daring mission to rescue the beautiful Rebel leader Princess Leia from the clutches of the evil Empire. Although Obi-Wan sacrifices himself in a lightsaber duel with Darth Vader, his former apprentice, Luke proves that the Force is with him by destroying the Empire's dreaded Death Star. - www.starwars.com",
+      "soundtrack": "Star Wars: A New Hope (Original Motion Picture Soundtrack)",
+      "playlist": [
+        {
+          "title": "Main Title",
+          "author": "John Williams"
+        },
+        {
+          "title": "Imperial Attack",
+          "author": "John Williams"
+        },
+        {
+          "title": "Princess Leia's Theme",
+          "author": "John Williams"
+        },
+        {
+          "title": "The Desert and Robot Auction",
+          "author": "John Williams"
+        },
+        {
+          "title": "Ben's Death and TIE Fighter Attack",
+          "author": "John Williams"
+        }
+      ]
     },
     {
       "name": "Lionel Messi",
