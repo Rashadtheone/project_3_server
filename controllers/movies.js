@@ -15,9 +15,9 @@ router.get('/', function (req, res) {
         })
 })
 
-router.get('/:name', function (req, res) {
+router.get('/:_id', function (req, res) {
   Movie
-        .findOne({name: req.params.name})
+        .findOne({_id: req.params._id})
         .then(function (data) {
           res.json(data)
         })
@@ -33,18 +33,18 @@ router.post('/', function (req, res) {
 })
 
 // PUT ROUTES //
-router.put('/:name', function (req, res) {
+router.put('/:_id', function (req, res) {
   Movie
-        .findOneAndUpdate({ name: req.params.name }, req.body)
+        .findOneAndUpdate({ _id: req.params._id }, req.body)
         .then(function (data) {
           res.json(data)
         })
 })
 
 // DELETE ROUTES //
-router.delete('/:name', function (req, res) {
+router.delete('/:_id', function (req, res) {
   Movie
-        .findOneAndRemove({ name: req.params.name }, req.body)
+        .findOneAndRemove({ _id: req.params._id }, req.body)
         .then(function (data) {
           res.json(data)
         })
