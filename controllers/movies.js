@@ -4,11 +4,11 @@ const router = express.Router()
 const mongoose = require('../db/config/db-connection')
 
 // mongoose.model to retrieve the Test [replace with your own] model
-const Player = mongoose.model('Player')
+const Movie = mongoose.model('Movie')
 
 // GET ROUTES //
 router.get('/', function(req, res) {
-    Player
+    Movies
         .find({})
         .then(function(data) {
             res.json(data)
@@ -16,7 +16,7 @@ router.get('/', function(req, res) {
 })
 
 router.get('/:name', function(req, res) {
-    Player
+    Movies
         .findOne({name: req.params.name})
         .then(function(data) {
             res.json(data)
@@ -25,7 +25,7 @@ router.get('/:name', function(req, res) {
 
 // POST ROUTES //
 router.post('/', function(req, res) {
-    Player
+    Movies
         .create(req.body)
         .then(function(data) {
             res.json(data)
@@ -34,7 +34,7 @@ router.post('/', function(req, res) {
 
 // PUT ROUTES //
 router.put('/:name', function(req, res) {
-    Player
+    Movies
         .findOneAndUpdate({ name: req.params.name} , req.body)
         .then(function(data) {
             res.json(data)
@@ -43,7 +43,7 @@ router.put('/:name', function(req, res) {
 
 // DELETE ROUTES //
 router.delete('/:name', function(req, res) {
-    Player
+    Movies
         .findOneAndRemove({ name: req.params.name} , req.body)
         .then(function(data) {
             res.json(data)
