@@ -5,18 +5,31 @@
       "team": "Cleveland Cavaliers"
     },
     {
-      "name": "Lionel Messi",
-      "sport": "Soccer", 
-      "team": "Barcelona FC"
-    },
-    {
-      "name": "Tom Brady",
-      "sport": "Football", 
-      "team": "New England Patriots"
-    },
-    {
-      "name": "Evgeni Malkin", 
-      "sport": "Hockey", 
-      "team": "Pittsburgh Penguins"
+      "title": "Jumanji: Welcome to the Jungle",
+      "genre": ["Action", "Adventure", "Comedy"], 
+      "description": "Four teenagers are sucked into a magical video game, and the only way they can escape is to work together to finish the game.", 
+      "soundtrack":"Jumanji: Welcome to the Jungle", 
+      "playlist": [
+        {
+          "title": "Rollercoaster", 
+          "author": "Bleachers"
+         }, 
+         {
+           "title": "Break Out", 
+           "author": "Jordyn Kane"
+         }, 
+         {
+           "title": "Jingle Bells", 
+           "author": "James Pierpont"
+          },
+          {
+           "title": "Baby I Love Your Way", 
+           "author": "Big Mountain"
+          },
+          {
+           "title": "Welcome to the Jungle", 
+           "author": "Guns N' Roses"
+          }
+      ]
     }
   ]
